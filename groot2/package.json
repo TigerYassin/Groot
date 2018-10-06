@@ -4,12 +4,12 @@
   "description": "Optimized Grocery Shopping List built with MERN Stack",
   "main": "server.js",
   "scripts": {
-    "client-install": "npm install --prefix client",
+    "client-install": "npm install --prefix client0",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
     "server": "nodemon server.js",
-    "client": "npm start --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "client": "npm start --prefix client0",
+    "dev": "concurrently \"npm run server\" \"npm run client0\""
   },
   "author": "Ahmed Gedi",
   "license": "MIT",
