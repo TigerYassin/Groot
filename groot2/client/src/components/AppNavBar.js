@@ -1,5 +1,4 @@
 import React from 'react';
-import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
 import './AppNavBar.css'
 
 export class AppNavBar extends React.Component {
@@ -39,7 +38,7 @@ render() {
         <a className="nav-link" href="#">About Us</a>
       </li>
     </ul>
-    
+
   </div>
 </nav>
   );

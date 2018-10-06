@@ -11,7 +11,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Video />
+      <AppNavBar /> 
+      <Video />
+      <FooterPage />
       </div>
     );
   }
