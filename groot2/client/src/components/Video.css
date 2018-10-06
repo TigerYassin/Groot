@@ -1,0 +1,17 @@
+.div {
+  width: 1000px;
+  height: 1000px;
+}
+.bgvideo /*video*/
+{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -999;
+  -webkit-filter: grayscale(1);
+  filter: grayscale(50px);
+}
