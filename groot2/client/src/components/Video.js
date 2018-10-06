@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import { Container } from 'reactstrap';
 import peopleWalkingCropped from './peopleWalkingCropped.mp4';
 
 export class Video extends React.Component {
