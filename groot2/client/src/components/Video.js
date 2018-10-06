@@ -1,34 +1,22 @@
-import React from 'react';
-import './Video.css'
-
-
+import React, {Component} from 'react';
+import { Container } from 'reactstrap';
+import peopleWalkingCropped from './peopleWalkingCropped.mp4';
 
 export class Video extends React.Component {
-  render() {
-    const videoOptions = {
-      src: 'http://download.blender.org/peach/bigbuckbunny_movies/BigBuckBunny_320x180.mp4',
-      ref: videoRef => {
-        this.videoRef = videoRef;
-      },
-      onClick: () => {
-        if (this.videoRef && this.videoRef.paused) {
-          this.videoRef.play();
-        } else if (this.videoRef) {
-          this.videoRef.pause();
+    constructor (props) {
+        super(props);
+
+        this.state = {
+            videoURL: peopleWalkingCropped
         }
-      },
-      title: 'click to play/pause',
-    };
-    return (
-      <div style={{
-        width: '300px',
-        height: '300px',
-        overflow: 'hidden',
-      }}>
-        {/* <VideoCover
-          videoOptions={videoOptions}
-        /> */}
-      </div>
-    );
-  }
+    }
+
+    render () {
+        return (
+            <video id="background-video" loop autoPlay>
+                <source src={this.state.videoURL} type="video/mp4" />
+                Your browser does not support the video tag.
+            </video>
+        )
+    }
 };
