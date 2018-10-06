@@ -1,6 +1,6 @@
 import React from 'react';
 import './Video.css'
-import { VideoCover } from ''
+
 
 
 export class Video extends React.Component {
@@ -25,9 +25,9 @@ export class Video extends React.Component {
         height: '300px',
         overflow: 'hidden',
       }}>
-        <VideoCover
+        {/* <VideoCover
           videoOptions={videoOptions}
-        />
+        /> */}
       </div>
     );
   }
