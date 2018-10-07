@@ -1,0 +1,6 @@
+#background-video {
+  width: 100%;
+  height: auto;
+  filter: blur(0px) saturate(2) brightness(1);
+
+}

@@ -1,0 +1,25 @@
+body {
+  background-color:transparent;
+}
+.dash h1 {
+  text-align: center;
+  margin-top: -130px
+}
+
+.dash Container {
+  background-color: #ffe9cf;
+}
+
+.dash Col {
+  color: red;
+}
+
+.dash img {
+  height: 12%;
+  width: 12%;
+  border-radius: 50%
+}
+
+.dash .profile {
+  padding-left: 190px;
+}
