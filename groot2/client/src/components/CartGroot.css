@@ -1,0 +1,27 @@
+.CartGroot{
+    border: 1px;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.qty{
+    width: 25%;
+}
+
+.qtyInput{
+    width: 25%;
+}
+
+#total{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#totalPrice{
+    font-size: 30px;
+    font-weight: bold;  
+}
+
+.location{
+    font-weight: bold; 
+}

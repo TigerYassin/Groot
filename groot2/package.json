@@ -17,13 +17,7 @@
     "body-parser": "^1.18.3",
     "concurrently": "^4.0.1",
     "express": "^4.16.3",
-    "mongoose": "^5.3.1",
-<<<<<<< HEAD
-    "react-router": "^4.3.1",
-    "react-router-dom": "^4.3.1"
-=======
-    "password-hash": "^1.2.2"
->>>>>>> backend
+    "mongoose": "^5.3.1"
   },
   "devDependencies": {
     "nodemon": "^1.18.4"
