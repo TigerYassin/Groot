@@ -5,6 +5,7 @@ import { FooterPage } from './components/default_footer.js';
 import { Video } from './components/Video'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
+import WhoWeAre from './components/WhoWeAre';
 
 class App extends Component {
   render() {
@@ -12,6 +13,7 @@ class App extends Component {
       <div className="App">
       <AppNavBar />
       <Video />
+      <WhoWeAre />
       <FooterPage />
       </div>
     );
