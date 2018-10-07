@@ -1,6 +1,7 @@
 import React from 'react';
 import './AppNavBar.css'
 import {FormsPage} from './FormsPage';
+import {Login} from './Login';
 
 export class AppNavBar extends React.Component {
 constructor(props) {
@@ -33,7 +34,7 @@ render() {
         <a className="nav-link" href="#"><FormsPage/></a>
       </li>
       <li className="nav-item">
-        <a className="nav-link" href="#">Login</a>
+        <a className="nav-link" href="#"><Login/></a>
       </li>
       <li className="nav-item">
         <a className="nav-link" href="#">About Us</a>
