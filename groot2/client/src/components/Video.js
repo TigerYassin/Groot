@@ -3,6 +3,7 @@ import React from 'react';
 import Cooking from './Cooking.mp4';
 import { Row, Col } from 'reactstrap';
 import './Video.css'
+import {FormsPage} from './FormsPage';
 
 export class Video extends React.Component {
     constructor (props) {
@@ -28,7 +29,7 @@ export class Video extends React.Component {
                 <Col><p className="px-5 pb-4">Optimized Shooping for the Savvy Shopper</p></Col>
               </Row>
               <Row className="last">
-                <Col><button type="button" className="btn btn-lg btn-rounded hover" >Sign Up</button></Col>
+                <Col><button type="button" className="btn btn-lg btn-rounded hover" ><FormsPage/></button></Col>
               </Row>
             </div>
           </div>
