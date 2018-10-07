@@ -5,7 +5,7 @@ export class FooterPage extends React.Component {
     render(){
         return(
             <Footer color="blue-grey" className="page-footer font-small lighten-5 pt-0">
-                <div style={{backgroundColor: '#21d192'}}>
+                <div style={{backgroundColor: '#31ba4b'}}>
                     <Container>
                         <Row className="py-4 d-flex align-items-center">
                             <Col md="6" lg="5" className="text-center text-md-left mb-4 mb-md-0">
@@ -26,7 +26,7 @@ export class FooterPage extends React.Component {
                         <Col md="3" lg="4" xl="3" className="mb-4 dark-grey-text">
                             <h6 className="text-uppercase font-weight-bold"><strong>Groot</strong></h6>
                             <hr className="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style={{width: '60px'}}/>
-                            <p>Our mission is to bring an end to time-wasting while shopping and still giving you the best 
+                            <p>Our mission is to bring an end to time-wasting while shopping and still giving you the best
                                 prices in your block
                             </p>
                         </Col>

@@ -17,7 +17,7 @@ toggle() {
 }
 render() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark"  style={{backgroundColor: '#21d192'}}>
+    <nav className="navbar navbar-expand-lg navbar-dark"  style={{backgroundColor: '#31ba4b'}}>
   <span className="navbar-brand text-uppercase font-weight-bold">GROOT</span>
   <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
     aria-expanded="false" aria-label="Toggle navigation">

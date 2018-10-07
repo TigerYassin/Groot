@@ -2,16 +2,55 @@
   width: 1000px;
   height: 1000px;
 }
-.bgvideo /*video*/
+
+#background-video
 {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: -999;
-  -webkit-filter: grayscale(1);
-  filter: grayscale(50px);
+  filter: brightness(45%);
+  width: 100%;
+  height: inherit;
+}
+
+.overlay-desc {
+  background: rgba(0,0,0,0);
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  align-items: center;
+  justify-content: center;
+  z-index:1;
+}
+
+.overlay-desc .left {
+  text-align: center;
+  padding-top: 200px;
+}
+.overlay-desc .left h1 {
+  font-size: 100px;
+  font-family: Montserrat;
+}
+
+.overlay-desc .below {
+    text-align: center;
+    padding-left: 10px;
+}
+.overlay-desc .below p {
+  font-size: 40px;
+  font-family: Montserrat;
+  color: white;
+}
+
+.overlay-desc .last {
+  text-align: left;
+  padding-left: 250px;
+  padding-top: 100px;
+}
+.overlay-desc .last button {
+  font-size: 20px;
+  border-radius: 20px;
+  background-color: #31ba4b;
+}
+
+.overlay-desc .last button:hover {
+    color: #ffffff;
+    background-color: #020e26;
+    border-color:#020e26;
 }
