@@ -1,13 +1,13 @@
 import React from 'react';
 import './DashJumbo.css'
 import { Jumbotron, Container, Progress, Row, Col, InputGroup, InputGroupAddon, Button, Input  } from 'reactstrap';
+import {FormsPage} from './FormsPage';
 
 
 
-
-
+// export class DashJumbo extends React.Component {
 export const DashJumbo = (props) => {
-
+    // const user = this.props.user;
   return (
     <div className="dash">
       <Jumbotron fluid>
@@ -20,7 +20,6 @@ export const DashJumbo = (props) => {
         </div>
         </Container>
       </Jumbotron>
-
       <Container>
         <div className="text-center"><Progress color="success" value="25" /></div>
       </Container>
@@ -46,3 +45,5 @@ export const DashJumbo = (props) => {
 //   <Col xs="2"><Button color="secondary">Send</Button></Col>
 // </Row>
 // </div>
+
+// export default DashJumbo;

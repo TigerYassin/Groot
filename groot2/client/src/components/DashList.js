@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import TodoItems from "./TodoItems";
 import "./DashList.css";
-import { Button } from 'reactstrap';
-
+// import { Button } from 'reactstrap';
+import {Button} from 'mdbreact';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 export class DashList extends Component {
@@ -58,6 +58,7 @@ export class DashList extends Component {
         <div className="answer">
           <TodoItems entries={this.state.items} delete={this.deleteItem}/>
         </div>
+        <Button href ="http://localhost:3000/cartgroot" color="success" rounded>Checkout</Button>
       </div>
     );
   }

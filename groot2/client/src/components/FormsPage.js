@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter, Route } from 'react-router-dom';
 import Dashboard from './Dashboard';
 import { Container, Row, Col, Input, Button, Fa, Card, CardBody, ModalFooter, Modal, ModalHeader } from 'mdbreact';
-import { DashJumbo } from './DashJumbo';
+
 
 export class FormsPage extends React.Component  {
 
@@ -12,13 +12,17 @@ export class FormsPage extends React.Component  {
         this.state = ({
             modal: false,
             user : '',
-            pass:''
+            pass:'',
+            name: '',
+            num: ''
         });
 
         this.toggle = this.toggle.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
         this.handleChange = this.handleChange.bind(this);
         this.handlePassChange = this.handlePassChange.bind(this);
+        this.handleNameChange = this.handleNameChange.bind(this);
+        this.handleNumChange = this.handleNumChange.bind(this);
     }
 
     toggle(){
@@ -42,52 +46,35 @@ export class FormsPage extends React.Component  {
     }
 
 
+    handleNameChange(event){
+      this.setState({
+          name: event.target.value
+      });
+  }
+
+
+  handleNumChange(event){
+    this.setState({
+        num: event.target.value
+    });
+}
+
+
     handleSubmit(e)  {
+
+      var dashboard = "dashboard";
+      window.location.href ="http://localhost:3000/"+dashboard;
+      // window.open("http://localhost:3000/dashboard");
         
-        // alert('A user was submitted '+ this.state.user +' and pass: '+ this.state.pass);
+        // alert('A user was submitted '+ this.state.user +' and pass: '+ this.state.pass + ' and name is '+ this.state.name+ ' and number is ' + this.state.num);
         e.preventDefault();
-        // this.setState({user: e.target.value});
-
-
-
-        // if(this.nameTextInput.value !== null) {
-        //     var newUser = {
-        //         user: this.nameTextInput.value
-        //       };
-
-
-
-        //     this.setState((prev)=>{
-        //         return {
-        //          user :  prev.user.concat(newUser)
-        //     };
-        // });
-
-
-        //     this.nameTextInput.value = "";
-        //     <DashJumbo user={user} /> 
-        // }
-        // console.log(this.state.user);
-        // e.preventDefault();
     }
 
-    // componentDidMount() {
-    //     ReactDOM.findDOMNode(this.nameTextInput).focus();
-    // }
-    // componentDidMount () {
-    //     this.nameTextInput.value = '';
-    //     ReactDOM.findDOMNode(this.nameTextInput).focus();
-    // }
-
-    
-
   render() {
-    //   let names = this.state.user.map(name => {
-    //       return <li>{name}</li>;
-    //   })
     return(
       <Container>
-          <li onClick = {this.toggle}>Sign In</li>
+        {/* <DashJumbo user = {this.state.user} onChange = {this.handleChange}/> */}
+          <li onClick = {this.toggle}>Sign Up</li>
           <Modal isOpen = {this.state.modal} toggle = {this.toggle}>
           
           
@@ -97,8 +84,10 @@ export class FormsPage extends React.Component  {
               <Card className="card-image" style={{backgroundImage: 'url(https://mdbootstrap.com/img/Photos/Others/pricing-table7.jpg)', width: '35rem'}}>
                 <div className="text-white rgba-stylish-strong py-5 px-5 z-depth-4">
                   <div className="text-center">
-                    <h3 className="white-text mb-5 mt-4 font-weight-bold"><strong>SIGN</strong> <a className="green-text font-weight-bold"><strong> IN</strong></a></h3>
+                    <h3 className="white-text mb-5 mt-4 font-weight-bold"><strong>SIGN</strong> <a className="green-text font-weight-bold"><strong> UP</strong></a></h3>
                   </div>
+                  <Input label = "Your Name" type = "text" value = {this.state.name} onChange = {this.handleNameChange} />
+                  <Input label = "Your Number" type = "text" value = {this.state.num} onChange = {this.handleNumChange} />
                   <Input label="Your email"   type="text" value = {this.state.user} onChange = {this.handleChange}  />
                   <Input label="Your password"  type="password" value ={this.state.pass} onChange = {this.handlePassChange} />
                   <div className="md-form pb-3">
@@ -113,7 +102,7 @@ export class FormsPage extends React.Component  {
                     </div>
                   </Row>
                   <Col md="12">
-                    <p className="font-small white-text d-flex justify-content-end">Dont have an account? <a href="#" className="green-text ml-1 font-weight-bold"> Sign Up</a></p>
+                    <p className="font-small white-text d-flex justify-content-end">Already have an account? <a href="#" className="green-text ml-1 font-weight-bold"> Sign In</a></p>
                   </Col>
                 </div>
               </Card>

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, Input, Button, Fa, Card, CardBody, ModalFooter, Modal, ModalHeader } from 'mdbreact';
 
+
 export class Login extends React.Component  {
 
     constructor(props){
@@ -20,11 +21,9 @@ export class Login extends React.Component  {
 
   render() {
     return(
-      <Container>
+      <Container>       
           <li onClick = {this.toggle}>Login</li>
-          <Modal isOpen = {this.state.modal} toggle = {this.toggle}>
-          {/* <ModalHeader toggle = {this.toggle}>Modal title</ModalHeader> */}
-          
+          <Modal isOpen = {this.state.modal} toggle = {this.toggle}>  
         <section className="form-dark">
           <Row>
             <Col md="5">

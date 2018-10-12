@@ -9,7 +9,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Home = () => {
   return (
-    <div className="Home">
+    <div href ="http://localhost:3000"className="Home">
       <AppNavBar />
       <Video />
       <WhoWeAre />
